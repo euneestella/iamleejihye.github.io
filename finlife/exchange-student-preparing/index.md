@@ -2,11 +2,13 @@
 layout: post
 title: 경희대학교 교환학생 지원기 (지망편)
 subtitle: "교환학생이 가고 싶어졌다."
-tag: [Exchange student]
-slug: 경희대학교 교환학생 지원기-1
-sitemap :
-  changefreq : daily
-  priority : 1.0
+type: "from Seoul"
+blog: true
+text: true
+author: "Eunhee Kim"
+post-header: true
+header-img: "img/header.jpg"
+order: 1
 ---
 ## 🌏 교환학생이 가고 싶어졌다.
 
