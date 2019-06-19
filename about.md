@@ -1,35 +1,30 @@
 ---
 layout: post
-title: "Jihye Leee"
-subtitle: "이지혜"
+title: "Eunhee Kim"
+subtitle: "김은희"
 type: "About"
-author: "Jihye Lee"
+author: "Eunhee Kim"
 permalink: /about/
 post-header: true
 header-img: img/about.jpg
 ---
 
-UX 에이전시 GUI 디자이너를 거쳐 현재는 RIDI에서 프로덕트 디자이너로 5년째 근무 중이다. 디자이너에게 코딩을 알려주는 코딩하는 디자이너라는 프로그램을 운영하고 브랜딩하기도 했다. 더 좋은 디자인 팀 만들기와 디자이너의 글쓰기에 관심이 많다.
+'대학 가면 수학 안 한다!' 고등학교 졸업과 동시에 수학과 작별할 줄 알았습니다. 지금은 데이터 과학자를 꿈꾸며 경희대학교에서 사회학과 응용수학을 공부하고 있습니다. 
+유용한데 심지어 예쁘기까지 한 결과물을 만들고 싶습니다.
 
-# Media
 
-### 월간 마이크로소프트웨어 2015년 2월호 표지 모델 및 기사
+## Education
+- 경기외국어고등학교(GAFL) 부설 언어영재교육원 수료
+- 경희대학교 정경대학 사회학과
+- 경희대학교 응용과학대학 응용수학과
 
-- [마소 VOL. 376-2015.02](https://www.imaso.co.kr/archives/458)
-- [코딩하는 디자이너를 말하다](http://14.49.34.137/?p=3216)
-- [이지혜 DXD세미나 운영진 “코딩은 또 하나의 즐거움”](http://14.49.34.137/?p=3207)
+## Honors and Awards
+- 경희대학교 2017-2학기 성적우수장학금
+- 경희대학교 2018-2학기 교수-튜터-학생 연계포트폴리오 최우수포트폴리오 (양적연구방법론)
+- 경희대학교 2019-1학기 경희 꿈도전장학 (연구)
 
-<br />
-
-### 디자인 매거진 CA 2015년 3월호
-
-- [디자이너와 스타트업 종사자의 네트워킹 파티](http://cakorea.com/archives/2779)
-
-<br />
-
-### Design Spectrum의 팟캐스트 Design Table
-
-- Design Table Ep 19. `끊임없이 배우는 디자이너`
-- 들을 수 있는 곳: [iTunes](http://itun.es/kr/i6TOib.c) / [팟빵](http://www.podbbang.com/ch/13590) / [Podty](https://www.podty.me/cast/174282)
-
-<br />
+## Computer Skills
+- Adobe Photoshop
+- Adobe Illustrator
+- R
+- Python
