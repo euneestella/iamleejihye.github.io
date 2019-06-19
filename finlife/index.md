@@ -8,13 +8,11 @@ project-header: true
 header-img: "img/project_bg.jpg"
 ---
 
-<div class="catalogue">
+<ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
-{% if page.finlife == true %}
-
-     {% include post-list.html %}
-
+{% if page.blog == true %}
+{% include post-list.html %}
 {% endif %}
 {% endfor %}
-</div>
+</ul>
