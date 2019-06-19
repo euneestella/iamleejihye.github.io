@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Blog"
-description: 아주 가끔씩 관심 분야의 글을 올려요.
+title: "Finlife"
+description: Life in FINLAND.
 main: true
 project-header: true
 header-img: img/about.jpg
