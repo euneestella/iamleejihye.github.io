@@ -17,7 +17,7 @@ description: 데이터 과학자를 꿈꾸고 있습니다.
             </a>
             <div class="underline-mask transition"></div>
             <div class="underline"></div>
-        </div>.
+        </div>
     </h1>
     <h2 class="intro">데이터 과학을 공부하고 있는 김은희입니다. 경희대학교에서 사회학과 응용수학을 전공하고 있습니다.</h2>
 </section>
