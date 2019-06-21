@@ -1,17 +1,21 @@
 ---
 layout: default
-title: "Blog"
-description: 아주 가끔씩 관심 분야의 글을 올려요.
+work: true
 main: true
+title: Blog
+description: 소소한 일상을 흘려보내되, 잊지 말아요.
 project-header: true
-header-img: img/about.jpg
+header-img: "img/about.jpg"
 ---
 
-<ul class="catalogue">
+<div class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
-{% if page.blog == true %}
-{% include post-list.html %}
+{% if page.projects == true %}
+
+     {% include post-list.html %}
+
 {% endif %}
 {% endfor %}
-</ul>
+</div>
+
