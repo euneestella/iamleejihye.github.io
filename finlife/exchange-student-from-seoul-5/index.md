@@ -22,7 +22,7 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 - Iltakajo (housing option 1)
 
-  ![Iltakajo](img/Iltakajo.jpg)[^1]
+  ![Iltakajo](img/Iltakajo.jpg)
 
   [^1 ]: source : https://tys.fi/en/exchange-students/housing-options
 
@@ -36,7 +36,7 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 - Student Village West (housing option 2)
 
-  ![west](./img/west.jpg) [^2]
+  ![west](./img/west.jpg)
 
   [^2 ]: source :  https://tys.fi/en/exchange-students/housing-options
 
@@ -49,7 +49,7 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 ### Retrodorm
 
-![retrodorm](img/retrodorm.jpg) [^3]
+![retrodorm](img/retrodorm.jpg)
 
 [^3]: source :  http://www.retrodorm.fi/general-information-about-retrodorm-student-dormitory
 
