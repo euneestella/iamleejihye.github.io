@@ -16,11 +16,11 @@ order: 5
 
 TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있는 걸 보니 TYS와 Retrodorm은 중복 신청 가능한 것 같기도 하다), 우여곡절 끝에 Iltakjo에 배정받았다. TYS와 Retrodorm의 차이를 설명하자면
 
-### TYS
+### TYS[^1]
 
 - 월세 300€ ~ (수도, 전기, 인터넷 사용료, 사우나 포함)
 
-- Iltakajo (housing option 1) [^1]
+- Iltakajo (housing option 1)
 
   ![Iltakajo](img/Iltakajo.jpg)
 
@@ -34,11 +34,9 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 
 
-- Student Village West (housing option 2) [^2]
+- Student Village West (housing option 2)
 
   ![west](./img/west.jpg) 
-
-  [^2 ]: source :  https://tys.fi/en/exchange-students/housing-options
 
   - 1인 1실
     - 층별 공용 주방 (보통 1층에 12명 거주)
@@ -47,7 +45,7 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 
 
-### Retrodorm [^3]
+### Retrodorm [^2]
 
 ![retrodorm](img/retrodorm.jpg)
 
