@@ -1,17 +1,20 @@
 ---
 layout: default
-title: "Finlife"
-description: Life in FINLAND.
+work: true
 main: true
+title: Finflife
+description: 핀란드 교환학생 일기
 project-header: true
-header-img: img/about.jpg
+header-img: "img/project_bg.jpg"
 ---
 
-<ul class="catalogue">
+<div class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
 {% if page.finlife == true %}
-{% include post-list.html %}
+
+     {% include post-list.html %}
+
 {% endif %}
 {% endfor %}
-</ul>
+</div>
