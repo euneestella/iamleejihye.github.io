@@ -3,7 +3,7 @@ layout: post
 title: 경희대학교 교환학생 지원기 (면접편)
 subtitle: "수험생 간접체험"
 type: "from Seoul"
-blog: true
+finlife: true
 text: true
 author: "Eunhee Kim"
 post-header: true

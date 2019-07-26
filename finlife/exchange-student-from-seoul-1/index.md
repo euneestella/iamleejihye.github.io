@@ -3,7 +3,7 @@ layout: post
 title: 경희대학교 교환학생 지원기 (지망편)
 subtitle: "교환학생이 가고 싶어졌다."
 type: "from Seoul"
-blog: true
+finlife: true
 text: true
 author: "Eunhee Kim"
 post-header: true

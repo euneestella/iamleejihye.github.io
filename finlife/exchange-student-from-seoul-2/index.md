@@ -3,7 +3,7 @@ layout: post
 title: 경희대학교 교환학생 지원기 (서류편)
 subtitle: "지옥에서 온 서류"
 type: "from Seoul"
-blog: true
+finlife: true
 text: true
 author: "Eunhee Kim"
 post-header: true

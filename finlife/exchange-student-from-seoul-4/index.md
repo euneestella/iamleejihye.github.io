@@ -3,7 +3,7 @@ layout: post
 title: 투르쿠 대학교 교환학생 합격
 subtitle: "저 이제 교환학생 '후보자' 아닙니다"
 type: "from Seoul"
-blog: true
+finlife: true
 text: true
 author: "Eunhee Kim"
 post-header: true
