@@ -2,7 +2,7 @@
 layout: post
 title: 출근 시간과 전반적 일자리 만족도의 관계 분석 (1)
 subtitle: "늦게 출근하는 일자리는 만족스러울까?"
-type: "Project"
+type: "project"
 blog: true
 text: true
 author: "Eunhee Kim"
@@ -56,8 +56,8 @@ library(dplyr)
 ​    
 ​    Attaching package: 'dplyr'
 ​    
-    The following objects are masked from 'package:stats':
-    
+​    The following objects are masked from 'package:stats':
+​    
         filter, lag
     
     The following objects are masked from 'package:base':
