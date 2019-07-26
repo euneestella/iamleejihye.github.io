@@ -31,41 +31,7 @@ library(foreign)
 library(dplyr)
 ```
 
-    Warning message:
-    "unable to access index for repository http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.5:
-      URL 'http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.5/PACKAGES'를 열 수 없습니다"
-    
-    package 'foreign' successfully unpacked and MD5 sums checked
-    
-    The downloaded binary packages are in
-    	C:\Users\eunee\AppData\Local\Temp\Rtmpeu61lL\downloaded_packages
-
-
-    Warning message:
-    "unable to access index for repository http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.5:
-      URL 'http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.5/PACKAGES'를 열 수 없습니다"
-    
-    package 'dplyr' successfully unpacked and MD5 sums checked
-    
-    The downloaded binary packages are in
-    	C:\Users\eunee\AppData\Local\Temp\Rtmpeu61lL\downloaded_packages
-
-
-​    
-​    Attaching package: 'dplyr'
-​    
-​    The following objects are masked from 'package:stats':
-​    
-​        filter, lag
-​    
-​    The following objects are masked from 'package:base':
-​    
-        intersect, setdiff, setequal, union
-
-
-​    
-
-17차 조사에는 부가조사와 개인별 조사가 있다. 부가조사와 개인별 조사에서 변수를 가져올 것이기 때문에, ```read.spss```명령어를 활용하여 불러들인다.   
+7차 조사에는 부가조사와 개인별 조사가 있다. 부가조사와 개인별 조사에서 변수를 가져올 것이기 때문에, ```read.spss```명령어를 활용하여 불러들인다.   
 
 ```dt17_a``` : 부가조사   
 ```dt17_p``` : 개인별 조사
@@ -145,44 +111,10 @@ str(rdt_i)
      $ jobty    : num  3 3 NA 1 4 1 NA NA 1 1 ...
      $ educ     : num  4 5 6 7 6 8 7 2 3 4 ...
 
-
-
-```R
-colSums(is.na(rdt_i))
-```
-
-
-<dl class=dl-horizontal>
-	<dt>pid</dt>
-		<dd>0</dd>
-	<dt>wstart_h</dt>
-		<dd>4349</dd>
-	<dt>wstart_m</dt>
-		<dd>4349</dd>
-	<dt>wend_h</dt>
-		<dd>4349</dd>
-	<dt>wend_m</dt>
-		<dd>4349</dd>
-	<dt>wspacesat</dt>
-		<dd>4349</dd>
-	<dt>gend</dt>
-		<dd>0</dd>
-	<dt>birth</dt>
-		<dd>0</dd>
-	<dt>comp_type</dt>
-		<dd>6505</dd>
-	<dt>wage</dt>
-		<dd>6515</dd>
-	<dt>jobty</dt>
-		<dd>4349</dd>
-	<dt>educ</dt>
-		<dd>0</dd>
-</dl>
-
-
-
 ```rdt_i```는 ```pid```를 ```key```로 한 inner join이기 때문에 ```pid```의 ```NA```는 0이다.   
 설명변수인 ```wstart_h```와 ```wstart_m```에 해당하지 않거나(```NA```), 모름/무응답(```-1```)인 사례는 연구관심 밖이므로 가장 먼저 제거가 필요하다.
+
+   
 
 ### 설명변수(출근시간) 만들기
 
@@ -199,45 +131,6 @@ nrdt_i$nwstart_m <- ifelse(nrdt_i$wstart_m == -1, NA, nrdt_i$wstart_m)
 ```R
 nrdt_i <- nrdt_i[complete.cases(nrdt_i[ , c("nwstart_h", "nwstart_m")]), ]
 ```
-
-
-```R
-colSums(is.na(nrdt_i))
-```
-
-
-<dl class=dl-horizontal>
-	<dt>pid</dt>
-		<dd>0</dd>
-	<dt>wstart_h</dt>
-		<dd>0</dd>
-	<dt>wstart_m</dt>
-		<dd>0</dd>
-	<dt>wend_h</dt>
-		<dd>0</dd>
-	<dt>wend_m</dt>
-		<dd>0</dd>
-	<dt>wspacesat</dt>
-		<dd>0</dd>
-	<dt>gend</dt>
-		<dd>0</dd>
-	<dt>birth</dt>
-		<dd>0</dd>
-	<dt>comp_type</dt>
-		<dd>2128</dd>
-	<dt>wage</dt>
-		<dd>2134</dd>
-	<dt>jobty</dt>
-		<dd>0</dd>
-	<dt>educ</dt>
-		<dd>0</dd>
-	<dt>nwstart_h</dt>
-		<dd>0</dd>
-	<dt>nwstart_m</dt>
-		<dd>0</dd>
-</dl>
-
-
 
 분석의 편의를 위해 시간을 '시' 단위로 통일한다. 예를 들어 오전 10시 30분은 10.5로 표시될 것이다.
 
@@ -591,7 +484,7 @@ save.image(file="C:/Users/eunee/khu_sda_project/data_cleaning.RData")
 ## 📝 생각
 - 근로시간을 단지 출근시간과 퇴근시간의 차로 설명할 수 있을까?  
 
-   근로시간에 관한 직접적인 자료가 데이터 셋에 없어서 출근시간과 퇴근시간의 차이를 이용해 임의로 근로시간 변수를 만들었다. 단순 출퇴근 시간의 차이로만 계산하였기 때문에 휴게시간을 제외한 순수 근로시간을 고려할 수 없었다.  
-   업무를 준비하기 위해 일찍 회사에 도착하는 경우가 많은데, 업무를 준비하는 시간 역시 근로시간에 포함하여 계산된다는 한계가 있다.
+   근로시간에 관한 직접적인 자료가 데이터 셋에 없어서 출근시간과 퇴근시간의 차이를 이용해 임의로 근로시간 변수를 만들었다. 단순 출퇴근 시간의 차이로만 계산하였기 때문에 <u>휴게시간을 제외한 순수 근로시간을 고려할 수 없었다</u>.  
+   업무를 준비하기 위해 일찍 회사에 도착하는 경우가 많은데, <u>업무를 준비하는 시간</u> 역시 근로시간에 포함하여 계산된다는 한계가 있다.
 
-- 시간을 소수점 단위로 나타내는 것이 직관적이지 않다. R에서 시간을 60진법으로 다루면서 동시에 통계 분석을 수행할 수는 없을까?
+- 시간을 소수점 단위로 나타내는 것이 직관적이지 않다. R에서 <u>시간을 60진법으로 다루면서 동시에 통계 분석을 수행</u>할 수는 없을까?
