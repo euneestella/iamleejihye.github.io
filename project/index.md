@@ -11,7 +11,7 @@ header-img: "img/project_bg.jpg"
 <div class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
-{% if page.projects == true %}
+{% if page.project == true %}
 
      {% include post-list.html %}
 
