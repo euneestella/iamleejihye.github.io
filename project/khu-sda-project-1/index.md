@@ -8,8 +8,6 @@ text: true
 author: "Eunhee Kim"
 post-header: true
 header-img: "img/header.jpg"
-skills: "R&Jupyter Notebook"
-date: "May 2018 - June 2016"
 order: 1
 ---
 
@@ -58,8 +56,8 @@ library(dplyr)
 ​    
 ​    The following objects are masked from 'package:stats':
 ​    
-        filter, lag
-    
+​        filter, lag
+​    
     The following objects are masked from 'package:base':
     
         intersect, setdiff, setequal, union
