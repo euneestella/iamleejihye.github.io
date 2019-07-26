@@ -254,7 +254,8 @@ nrdt_i$comp_type <- c(1, 1 ,2, 1, 2)[match(nrdt_i$comp_type, c(1, 2, 3, 4, 5))]
 이후   
 0 : 민간회사, 개인 사업체, 외국인 회사, 법인단체     
 1 : 정부투자기관, 정부출연기관, 공사합동기업, 정부기관   
-의 두 범주로 기업혀태를 범주화한다.
+
+의 두 범주로 기업형태를 범주화한다.
 
 
 ```R
@@ -309,22 +310,6 @@ nrdt_i$educ <- factor(nrdt_i$educ)
 ```R
 summary(nrdt_i$educ)
 ```
-
-
-<dl class=dl-horizontal>
-	<dt>0</dt>
-		<dd>1437</dd>
-	<dt>1</dt>
-		<dd>2550</dd>
-	<dt>2</dt>
-		<dd>1148</dd>
-	<dt>3</dt>
-		<dd>1743</dd>
-	<dt>4</dt>
-		<dd>355</dd>
-</dl>
-
-
 
 0 : 미취학, 무학, 초등학교, 중학교   
 1 : 고등학교   
