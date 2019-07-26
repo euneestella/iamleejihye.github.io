@@ -2,9 +2,9 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Jihye Leee
+title:          Eunhee Kim
 baseurl:        ""
-url:            "https://euneestella.github.io/"
+url:            https://euneestella.github.io/
 
 # Assets
 sass:
