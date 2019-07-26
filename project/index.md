@@ -1,20 +1,17 @@
 ---
 layout: default
-work: true
-main: true
-title: Selected Projects
+title: "Project"
 description: 지금까지 작업한 프로젝트
+main: true
 project-header: true
-header-img: "img/project_bg.jpg"
+header-img: img/about.jpg
 ---
 
-<div class="catalogue">
+<ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
-{% if page.projects == true %}
-
-     {% include post-list.html %}
-
+{% if page.blog == true %}
+{% include post-list.html %}
 {% endif %}
 {% endfor %}
-</div>
+</ul>
