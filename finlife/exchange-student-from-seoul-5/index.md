@@ -3,7 +3,7 @@ layout: post
 title: 투르쿠 학생아파트(TYS) 신청하기
 subtitle: "내집 마련의 꿈"
 type: "from Seoul"
-blog: true
+finlife: true
 text: true
 author: "Eunhee Kim"
 post-header: true

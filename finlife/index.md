@@ -2,7 +2,7 @@
 layout: default
 work: true
 main: true
-title: Finflife
+title: Finlife
 description: 핀란드 교환학생 일기
 project-header: true
 header-img: "img/project_bg.jpg"
