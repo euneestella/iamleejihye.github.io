@@ -12,9 +12,9 @@ header-img: "img/header.jpg"
 order: 1
 ---
 
-team: "데이터 클리닝 및 분석, 4명"
-skils: "R & Jupyter Notebook"
-date: "May 2019 - June 2016"
+team: "데이터 클리닝 및 분석, 4명"  
+skils: "R & Jupyter Notebook"   
+date: "May 2019 - June 2016"     
 
 
 
