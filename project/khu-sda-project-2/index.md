@@ -189,13 +189,13 @@ summary(lm(wspacesat ~ wstart))
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.3099 -0.3094 -0.3088  0.6906  1.7000 
 ​    
-    Coefficients:
-                 Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)  3.318767   0.032783 101.235   <2e-16 ***
-    wstart      -0.001104   0.003503  -0.315    0.753    
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                 Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)  3.318767   0.032783 101.235   <2e-16 ***
+​    wstart      -0.001104   0.003503  -0.315    0.753    
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.5877 on 4898 degrees of freedom
     Multiple R-squared:  2.03e-05,	Adjusted R-squared:  -0.0001839 
     F-statistic: 0.09941 on 1 and 4898 DF,  p-value: 0.7526
@@ -222,22 +222,22 @@ summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(c
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2752 -0.3242 -0.1526  0.4982  2.2081 
 ​    
-    Coefficients:
-                        Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)         2.014878   0.096709  20.834  < 2e-16 ***
-    wstart              0.004964   0.003307   1.501  0.13337    
-    lnwage              0.215147   0.016428  13.096  < 2e-16 ***
-    factor(gend)1       0.152437   0.017769   8.579  < 2e-16 ***
-    factor(jobty)1     -0.064778   0.023582  -2.747  0.00604 ** 
-    factor(jobty)2     -0.261753   0.030848  -8.485  < 2e-16 ***
-    factor(comp_type)1  0.267660   0.023202  11.536  < 2e-16 ***
-    factor(educ)1      -0.009827   0.025862  -0.380  0.70399    
-    factor(educ)2       0.041012   0.029699   1.381  0.16736    
-    factor(educ)3       0.088049   0.028683   3.070  0.00215 ** 
-    factor(educ)4       0.255861   0.041908   6.105 1.11e-09 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                        Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)         2.014878   0.096709  20.834  < 2e-16 ***
+​    wstart              0.004964   0.003307   1.501  0.13337    
+​    lnwage              0.215147   0.016428  13.096  < 2e-16 ***
+​    factor(gend)1       0.152437   0.017769   8.579  < 2e-16 ***
+​    factor(jobty)1     -0.064778   0.023582  -2.747  0.00604 ** 
+​    factor(jobty)2     -0.261753   0.030848  -8.485  < 2e-16 ***
+​    factor(comp_type)1  0.267660   0.023202  11.536  < 2e-16 ***
+​    factor(educ)1      -0.009827   0.025862  -0.380  0.70399    
+​    factor(educ)2       0.041012   0.029699   1.381  0.16736    
+​    factor(educ)3       0.088049   0.028683   3.070  0.00215 ** 
+​    factor(educ)4       0.255861   0.041908   6.105 1.11e-09 ***
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.5404 on 4884 degrees of freedom
     Multiple R-squared:  0.1541,	Adjusted R-squared:  0.1523 
     F-statistic: 88.96 on 10 and 4884 DF,  p-value: < 2.2e-16
@@ -263,14 +263,14 @@ summary(lm(wspacesat ~ poly(wstart,2)))
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.3541 -0.3253 -0.3036  0.6747  1.8128 
 ​    
-    Coefficients:
-                      Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)       3.308776   0.008377 394.977  < 2e-16 ***
-    poly(wstart, 2)1 -0.185299   0.586399  -0.316    0.752    
-    poly(wstart, 2)2 -2.808725   0.586399  -4.790 1.72e-06 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                      Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)       3.308776   0.008377 394.977  < 2e-16 ***
+​    poly(wstart, 2)1 -0.185299   0.586399  -0.316    0.752    
+​    poly(wstart, 2)2 -2.808725   0.586399  -4.790 1.72e-06 ***
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.5864 on 4897 degrees of freedom
     Multiple R-squared:  0.004683,	Adjusted R-squared:  0.004277 
     F-statistic: 11.52 on 2 and 4897 DF,  p-value: 1.019e-05
@@ -294,22 +294,22 @@ summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(c
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2985 -0.3304 -0.1697  0.5561  2.1100 
 ​    
-    Coefficients:
-                       Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)         3.19690    0.02613 122.360  < 2e-16 ***
-    poly(wstart, 2)1    0.12840    0.56147   0.229 0.819121    
-    poly(wstart, 2)2   -0.99357    0.56493  -1.759 0.078682 .  
-    factor(gend)1       0.05521    0.01690   3.267 0.001096 ** 
-    factor(jobty)1     -0.17529    0.02244  -7.810 6.94e-15 ***
-    factor(jobty)2     -0.36789    0.03029 -12.145  < 2e-16 ***
-    factor(comp_type)1  0.27193    0.02360  11.521  < 2e-16 ***
-    educ1               0.04477    0.02598   1.723 0.084957 .  
-    educ2               0.11516    0.02971   3.877 0.000107 ***
-    educ3               0.18601    0.02823   6.590 4.87e-11 ***
-    educ4               0.41188    0.04095  10.058  < 2e-16 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                       Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)         3.19690    0.02613 122.360  < 2e-16 ***
+​    poly(wstart, 2)1    0.12840    0.56147   0.229 0.819121    
+​    poly(wstart, 2)2   -0.99357    0.56493  -1.759 0.078682 .  
+​    factor(gend)1       0.05521    0.01690   3.267 0.001096 ** 
+​    factor(jobty)1     -0.17529    0.02244  -7.810 6.94e-15 ***
+​    factor(jobty)2     -0.36789    0.03029 -12.145  < 2e-16 ***
+​    factor(comp_type)1  0.27193    0.02360  11.521  < 2e-16 ***
+​    educ1               0.04477    0.02598   1.723 0.084957 .  
+​    educ2               0.11516    0.02971   3.877 0.000107 ***
+​    educ3               0.18601    0.02823   6.590 4.87e-11 ***
+​    educ4               0.41188    0.04095  10.058  < 2e-16 ***
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.5499 on 4889 degrees of freedom
     Multiple R-squared:  0.1262,	Adjusted R-squared:  0.1244 
     F-statistic: 70.59 on 10 and 4889 DF,  p-value: < 2.2e-16
@@ -331,23 +331,23 @@ summary(lm(wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + factor(jobty) +
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2692 -0.3236 -0.1471  0.4981  2.2009 
 ​    
-    Coefficients:
-                       Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)         2.05703    0.08987  22.888  < 2e-16 ***
-    poly(wstart, 2)1    0.83720    0.55432   1.510  0.13103    
-    poly(wstart, 2)2   -1.28872    0.55558  -2.320  0.02040 *  
-    lnwage              0.21745    0.01643  13.235  < 2e-16 ***
-    factor(gend)1       0.14625    0.01798   8.135 5.16e-16 ***
-    factor(jobty)1     -0.06496    0.02358  -2.755  0.00589 ** 
-    factor(jobty)2     -0.26224    0.03082  -8.509  < 2e-16 ***
-    factor(comp_type)1  0.26700    0.02320  11.510  < 2e-16 ***
-    educ1              -0.01553    0.02594  -0.599  0.54944    
-    educ2               0.03316    0.02984   1.111  0.26653    
-    educ3               0.07840    0.02890   2.712  0.00671 ** 
-    educ4               0.24806    0.04210   5.892 4.07e-09 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                       Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)         2.05703    0.08987  22.888  < 2e-16 ***
+​    poly(wstart, 2)1    0.83720    0.55432   1.510  0.13103    
+​    poly(wstart, 2)2   -1.28872    0.55558  -2.320  0.02040 *  
+​    lnwage              0.21745    0.01643  13.235  < 2e-16 ***
+​    factor(gend)1       0.14625    0.01798   8.135 5.16e-16 ***
+​    factor(jobty)1     -0.06496    0.02358  -2.755  0.00589 ** 
+​    factor(jobty)2     -0.26224    0.03082  -8.509  < 2e-16 ***
+​    factor(comp_type)1  0.26700    0.02320  11.510  < 2e-16 ***
+​    educ1              -0.01553    0.02594  -0.599  0.54944    
+​    educ2               0.03316    0.02984   1.111  0.26653    
+​    educ3               0.07840    0.02890   2.712  0.00671 ** 
+​    educ4               0.24806    0.04210   5.892 4.07e-09 ***
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.5404 on 4888 degrees of freedom
     Multiple R-squared:  0.1564,	Adjusted R-squared:  0.1545 
     F-statistic: 82.38 on 11 and 4888 DF,  p-value: < 2.2e-16
@@ -369,17 +369,8 @@ anova(fit3, fit4)
 ```
 
 
-<table>
-<thead><tr><th scope=col>Res.Df</th><th scope=col>RSS</th><th scope=col>Df</th><th scope=col>Sum of Sq</th><th scope=col>F</th><th scope=col>Pr(&gt;F)</th></tr></thead>
-<tbody>
-	<tr><td>4888       </td><td>1477.470   </td><td>NA         </td><td>      NA   </td><td>      NA   </td><td>         NA</td></tr>
-	<tr><td>4887       </td><td>1426.719   </td><td> 1         </td><td>50.75066   </td><td>173.8383   </td><td>4.94703e-39</td></tr>
-</tbody>
-</table>
 
-
-
-로그임금 변수를 포함한 모형의 F검정 값이 매우 크며 p값 역시 매우 작다. 따라서 설명변수와 종속변수는 위로 볼록한 이차함수의 모형을 따른다.    
+로그임금 변수를 포함한 모형의 F검정 값이 매우 크며(173) p값 역시 매우 작다. 따라서 설명변수와 종속변수는 위로 볼록한 이차함수의 모형을 따른다.    
     
 즉, <u>출근시간이 늦어질수록 전반적 일자리 만족도가 증가하다가 특정 변곡점 이후로는 오히려 감소</u>한다.
 
@@ -426,15 +417,15 @@ summary(lm(lnwage ~ poly(wstart, 3)))
 ​         Min       1Q   Median       3Q      Max 
 ​    -3.14123 -0.34377 -0.00508  0.40037  2.99061 
 ​    
-    Coefficients:
-                     Estimate Std. Error t value Pr(>|t|)    
-    (Intercept)       5.29579    0.00881 601.117  < 2e-16 ***
-    poly(wstart, 3)1 -7.39646    0.61669 -11.994  < 2e-16 ***
-    poly(wstart, 3)2  1.91414    0.61669   3.104  0.00192 ** 
-    poly(wstart, 3)3  7.39814    0.61669  11.996  < 2e-16 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    Coefficients:
+​                     Estimate Std. Error t value Pr(>|t|)    
+​    (Intercept)       5.29579    0.00881 601.117  < 2e-16 ***
+​    poly(wstart, 3)1 -7.39646    0.61669 -11.994  < 2e-16 ***
+​    poly(wstart, 3)2  1.91414    0.61669   3.104  0.00192 ** 
+​    poly(wstart, 3)3  7.39814    0.61669  11.996  < 2e-16 ***
+​    ---
+​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+​    
     Residual standard error: 0.6167 on 4896 degrees of freedom
     Multiple R-squared:  0.05726,	Adjusted R-squared:  0.05669 
     F-statistic: 99.13 on 3 and 4896 DF,  p-value: < 2.2e-16
@@ -457,9 +448,7 @@ wspacesat\quad =\quad 2.05703\quad +\quad 0.83720wstart\quad -\quad 1.28872{ wst
 처음으로 직접 문제 설정부터 자료 수집, 분석, 시각화, 보고서 작성까지 끝낸 프로젝트다. 심지어 첫 프로젝트가 팀 프로젝트!
 
 1. n차 다항식 회귀를 처음 적용해 보았다. 단순 선형회귀 모형(+다중 선형 회귀)만 사용해 보았는데 어쩌다 보니 처음 보는 회귀모형을 적용해 볼 수 있었다. 교수님께서 자료를 분석하기 전에 꼭 **산점도**를 그려보라고 하셨는데, 산점도를 그리지 않았더라면 이런 관계도 보지 못했을 것이다.   
-   
 2. 그런데 n차 다항식 회귀를 적용하는 게 마감일 직전에(...) 우연히 시도해 본 것이라 코드와 n차 다항식 회귀에 대한 개념적 이해가 정말 미숙했다.
-   
 3. 처음으로 **jupyter notebook**과 **github**를 이용해 프로젝트를 해 보았다. 협업을 할 때 R 파일만 주고받으니 효율성과 PC간 호환성이 좋지 않았는데, 프로젝트의 허브 역할을 하는 github 저장소를 만들어 놓고 관리하니 의사소통이 한결 편해졌다. 다만 pull request 하고 서로의 코드를 리뷰하는 수준까지는 가지 못했다. 그리고 뒤늦게 r studio도 마크다운을 지원한다는 걸 알았다. 
-   
 4. 코드를 깔끔하게 정리하고 분석 흐름을 글로 보기좋게 적는 연습을 해야겠다.
+5. 마크다운에서 보이는 수식이나 표현이 html로 변환되는 과정에서 깨지는 경우가 많다. 분명히 마크다운 문법으로 썼는데! 수식은 블로그에 수식을 지원하도록 코드를 추가하면 될 것 같은데, 표가 종종 깨진다. 중요한 표는 캡쳐해서 이미지 파일로 넣어야 하나?
