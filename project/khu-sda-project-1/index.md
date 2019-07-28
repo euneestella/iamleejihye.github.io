@@ -9,7 +9,7 @@ portfolio : true
 author: "Eunhee Kim"
 post-header: true
 header-img: "img/header.jpg"
-role-title : "데이터 분석"
+role-title : "데이터 클리닝 및 분석"
 team : "데이터 클리닝 및 분석, 4명"
 platforms : "R & Jupyter Notebook"
 date : "May 2019 - June 2019"
