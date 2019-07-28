@@ -58,20 +58,22 @@ summary(nrdt_attach)
 ```
 
 
-          pid               wstart         wspacesat         wtime         gend    
-     Min.   :     102   Min.   : 0.000   Min.   :1.000   Min.   : 0.3333   0:2901  
-     1st Qu.:  193278   1st Qu.: 8.000   1st Qu.:3.000   1st Qu.: 9.0000   1:1999  
-     Median :  353304   Median : 9.000   Median :3.000   Median : 9.0000           
-     Mean   : 1870533   Mean   : 9.046   Mean   :3.309   Mean   : 9.5761           
-     3rd Qu.:  596777   3rd Qu.: 9.000   3rd Qu.:4.000   3rd Qu.:10.0000           
-     Max.   :11014502   Max.   :23.000   Max.   :5.000   Max.   :24.0000           
-          age       comp_type educ     jobty        lnwage     
-     Min.   :18.0   0:4236    0: 666   0:3669   Min.   :2.304  
-     1st Qu.:35.0   1: 664    1:1644   1: 813   1st Qu.:4.942  
-     Median :42.0             2: 931   2: 418   Median :5.298  
-     Mean   :43.6             3:1375            Mean   :5.296  
-     3rd Qu.:52.0             4: 284            3rd Qu.:5.704  
-     Max.   :80.0                               Max.   :8.294  
+```R
+      pid               wstart         wspacesat         wtime         gend    
+ Min.   :     102   Min.   : 0.000   Min.   :1.000   Min.   : 0.3333   0:2901  
+ 1st Qu.:  193278   1st Qu.: 8.000   1st Qu.:3.000   1st Qu.: 9.0000   1:1999  
+ Median :  353304   Median : 9.000   Median :3.000   Median : 9.0000           
+ Mean   : 1870533   Mean   : 9.046   Mean   :3.309   Mean   : 9.5761           
+ 3rd Qu.:  596777   3rd Qu.: 9.000   3rd Qu.:4.000   3rd Qu.:10.0000           
+ Max.   :11014502   Max.   :23.000   Max.   :5.000   Max.   :24.0000           
+      age       comp_type educ     jobty        lnwage     
+ Min.   :18.0   0:4236    0: 666   0:3669   Min.   :2.304  
+ 1st Qu.:35.0   1: 664    1:1644   1: 813   1st Qu.:4.942  
+ Median :42.0             2: 931   2: 418   Median :5.298  
+ Mean   :43.6             3:1375            Mean   :5.296  
+ 3rd Qu.:52.0             4: 284            3rd Qu.:5.704  
+ Max.   :80.0                               Max.   :8.294  
+```
 
 
 설명변수와 종속변수의 분포를 그래프로 나타내 보자. 
@@ -177,11 +179,9 @@ barplot(prop.table(table(educ)), col="mediumpurple3",
 
 
 ```R
-summary(lm(wspacesat ~ wstart))
-```
+summary(lm(wspacesat ~ wstart)) 
 
 
-​    
 ​    Call:
 ​    lm(formula = wspacesat ~ wstart)
 ​    
@@ -189,13 +189,15 @@ summary(lm(wspacesat ~ wstart))
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.3099 -0.3094 -0.3088  0.6906  1.7000 
 ​    
-​    Coefficients:
-​                 Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)  3.318767   0.032783 101.235   <2e-16 ***
-​    wstart      -0.001104   0.003503  -0.315    0.753    
-​    ---
-​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)  3.318767   0.032783 101.235   <2e-16 ***
+    wstart      -0.001104   0.003503  -0.315    0.753    
+    ---
+    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    
+```
+
     Residual standard error: 0.5877 on 4898 degrees of freedom
     Multiple R-squared:  2.03e-05,	Adjusted R-squared:  -0.0001839 
     F-statistic: 0.09941 on 1 and 4898 DF,  p-value: 0.7526
@@ -209,11 +211,8 @@ summary(lm(wspacesat ~ wstart))
 
 
 ```R
-summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(comp_type) + factor(educ)))
-```
+summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(comp_type) + factor(educ))) 
 
-
-​    
 ​    Call:
 ​    lm(formula = wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + 
 ​        factor(comp_type) + factor(educ))
@@ -222,22 +221,24 @@ summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(c
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2752 -0.3242 -0.1526  0.4982  2.2081 
 ​    
-​    Coefficients:
-​                        Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)         2.014878   0.096709  20.834  < 2e-16 ***
-​    wstart              0.004964   0.003307   1.501  0.13337    
-​    lnwage              0.215147   0.016428  13.096  < 2e-16 ***
-​    factor(gend)1       0.152437   0.017769   8.579  < 2e-16 ***
-​    factor(jobty)1     -0.064778   0.023582  -2.747  0.00604 ** 
-​    factor(jobty)2     -0.261753   0.030848  -8.485  < 2e-16 ***
-​    factor(comp_type)1  0.267660   0.023202  11.536  < 2e-16 ***
-​    factor(educ)1      -0.009827   0.025862  -0.380  0.70399    
-​    factor(educ)2       0.041012   0.029699   1.381  0.16736    
-​    factor(educ)3       0.088049   0.028683   3.070  0.00215 ** 
-​    factor(educ)4       0.255861   0.041908   6.105 1.11e-09 ***
-​    ---
-​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)         2.014878   0.096709  20.834  < 2e-16 ***
+    wstart              0.004964   0.003307   1.501  0.13337    
+    lnwage              0.215147   0.016428  13.096  < 2e-16 ***
+    factor(gend)1       0.152437   0.017769   8.579  < 2e-16 ***
+    factor(jobty)1     -0.064778   0.023582  -2.747  0.00604 ** 
+    factor(jobty)2     -0.261753   0.030848  -8.485  < 2e-16 ***
+    factor(comp_type)1  0.267660   0.023202  11.536  < 2e-16 ***
+    factor(educ)1      -0.009827   0.025862  -0.380  0.70399    
+    factor(educ)2       0.041012   0.029699   1.381  0.16736    
+    factor(educ)3       0.088049   0.028683   3.070  0.00215 ** 
+    factor(educ)4       0.255861   0.041908   6.105 1.11e-09 ***
+    ---
+    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    
+```
+
     Residual standard error: 0.5404 on 4884 degrees of freedom
     Multiple R-squared:  0.1541,	Adjusted R-squared:  0.1523 
     F-statistic: 88.96 on 10 and 4884 DF,  p-value: < 2.2e-16
@@ -252,25 +253,24 @@ summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(c
 
 ```R
 summary(lm(wspacesat ~ poly(wstart,2)))
-```
 
 
-​    
-​    Call:
+Call:
 ​    lm(formula = wspacesat ~ poly(wstart, 2))
 ​    
 ​    Residuals:
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.3541 -0.3253 -0.3036  0.6747  1.8128 
 ​    
-​    Coefficients:
-​                      Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)       3.308776   0.008377 394.977  < 2e-16 ***
-​    poly(wstart, 2)1 -0.185299   0.586399  -0.316    0.752    
-​    poly(wstart, 2)2 -2.808725   0.586399  -4.790 1.72e-06 ***
-​    ---
-​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)       3.308776   0.008377 394.977  < 2e-16 ***
+    poly(wstart, 2)1 -0.185299   0.586399  -0.316    0.752         poly(wstart, 2)2 -2.808725   0.586399  -4.790 1.72e-06 *** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    
+```
+
     Residual standard error: 0.5864 on 4897 degrees of freedom
     Multiple R-squared:  0.004683,	Adjusted R-squared:  0.004277 
     F-statistic: 11.52 on 2 and 4897 DF,  p-value: 1.019e-05
@@ -281,11 +281,8 @@ summary(lm(wspacesat ~ poly(wstart,2)))
 
 
 ```R
-summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(comp_type) + educ))
-```
+summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(comp_type) + educ)) 
 
-
-​    
 ​    Call:
 ​    lm(formula = wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + 
 ​        factor(comp_type) + educ)
@@ -294,22 +291,24 @@ summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(c
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2985 -0.3304 -0.1697  0.5561  2.1100 
 ​    
-​    Coefficients:
-​                       Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)         3.19690    0.02613 122.360  < 2e-16 ***
-​    poly(wstart, 2)1    0.12840    0.56147   0.229 0.819121    
-​    poly(wstart, 2)2   -0.99357    0.56493  -1.759 0.078682 .  
-​    factor(gend)1       0.05521    0.01690   3.267 0.001096 ** 
-​    factor(jobty)1     -0.17529    0.02244  -7.810 6.94e-15 ***
-​    factor(jobty)2     -0.36789    0.03029 -12.145  < 2e-16 ***
-​    factor(comp_type)1  0.27193    0.02360  11.521  < 2e-16 ***
-​    educ1               0.04477    0.02598   1.723 0.084957 .  
-​    educ2               0.11516    0.02971   3.877 0.000107 ***
-​    educ3               0.18601    0.02823   6.590 4.87e-11 ***
-​    educ4               0.41188    0.04095  10.058  < 2e-16 ***
-​    ---
-​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)         3.19690    0.02613 122.360  < 2e-16 ***
+    poly(wstart, 2)1    0.12840    0.56147   0.229 0.819121    
+    poly(wstart, 2)2   -0.99357    0.56493  -1.759 0.078682 .  
+    factor(gend)1       0.05521    0.01690   3.267 0.001096 ** 
+    factor(jobty)1     -0.17529    0.02244  -7.810 6.94e-15 ***
+    factor(jobty)2     -0.36789    0.03029 -12.145  < 2e-16 ***
+    factor(comp_type)1  0.27193    0.02360  11.521  < 2e-16 ***
+    educ1               0.04477    0.02598   1.723 0.084957 .  
+    educ2               0.11516    0.02971   3.877 0.000107 ***
+    educ3               0.18601    0.02823   6.590 4.87e-11 ***
+    educ4               0.41188    0.04095  10.058  < 2e-16 ***
+    ---
+    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    
+```
+
     Residual standard error: 0.5499 on 4889 degrees of freedom
     Multiple R-squared:  0.1262,	Adjusted R-squared:  0.1244 
     F-statistic: 70.59 on 10 and 4889 DF,  p-value: < 2.2e-16
@@ -321,9 +320,8 @@ summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(c
 summary(lm(wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + factor(jobty) + factor(comp_type) + educ))
 ```
 
-
-​    
-​    Call:
+    ```R
+Call:
 ​    lm(formula = wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + 
 ​        factor(jobty) + factor(comp_type) + educ)
 ​    
@@ -331,23 +329,25 @@ summary(lm(wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + factor(jobty) +
 ​        Min      1Q  Median      3Q     Max 
 ​    -2.2692 -0.3236 -0.1471  0.4981  2.2009 
 ​    
-​    Coefficients:
-​                       Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)         2.05703    0.08987  22.888  < 2e-16 ***
-​    poly(wstart, 2)1    0.83720    0.55432   1.510  0.13103    
-​    poly(wstart, 2)2   -1.28872    0.55558  -2.320  0.02040 *  
-​    lnwage              0.21745    0.01643  13.235  < 2e-16 ***
-​    factor(gend)1       0.14625    0.01798   8.135 5.16e-16 ***
-​    factor(jobty)1     -0.06496    0.02358  -2.755  0.00589 ** 
-​    factor(jobty)2     -0.26224    0.03082  -8.509  < 2e-16 ***
-​    factor(comp_type)1  0.26700    0.02320  11.510  < 2e-16 ***
-​    educ1              -0.01553    0.02594  -0.599  0.54944    
-​    educ2               0.03316    0.02984   1.111  0.26653    
-​    educ3               0.07840    0.02890   2.712  0.00671 ** 
-​    educ4               0.24806    0.04210   5.892 4.07e-09 ***
-​    ---
+    Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)         2.05703    0.08987  22.888  < 2e-16 ***
+    poly(wstart, 2)1    0.83720    0.55432   1.510  0.13103    
+    poly(wstart, 2)2   -1.28872    0.55558  -2.320  0.02040 *  
+    lnwage              0.21745    0.01643  13.235  < 2e-16 ***
+    factor(gend)1       0.14625    0.01798   8.135 5.16e-16 ***
+    factor(jobty)1     -0.06496    0.02358  -2.755  0.00589 ** 
+    factor(jobty)2     -0.26224    0.03082  -8.509  < 2e-16 ***
+    factor(comp_type)1  0.26700    0.02320  11.510  < 2e-16 ***
+    educ1              -0.01553    0.02594  -0.599  0.54944    
+    educ2               0.03316    0.02984   1.111  0.26653    
+    educ3               0.07840    0.02890   2.712  0.00671 ** 
+    educ4               0.24806    0.04210   5.892 4.07e-09 ***
+
 ​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    
+    ```
+
     Residual standard error: 0.5404 on 4888 degrees of freedom
     Multiple R-squared:  0.1564,	Adjusted R-squared:  0.1545 
     F-statistic: 82.38 on 11 and 4888 DF,  p-value: < 2.2e-16
