@@ -185,10 +185,10 @@ summary(lm(wspacesat ~ wstart))
 ​    Call:
 ​    lm(formula = wspacesat ~ wstart)
 ​    
-    Residuals:
-        Min      1Q  Median      3Q     Max 
-    -2.3099 -0.3094 -0.3088  0.6906  1.7000 
-    
+​    Residuals:
+​        Min      1Q  Median      3Q     Max 
+​    -2.3099 -0.3094 -0.3088  0.6906  1.7000 
+​    
     Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
     (Intercept)  3.318767   0.032783 101.235   <2e-16 ***
@@ -218,10 +218,10 @@ summary(lm(wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + factor(c
 ​    lm(formula = wspacesat ~ wstart + lnwage + factor(gend) + factor(jobty) + 
 ​        factor(comp_type) + factor(educ))
 ​    
-    Residuals:
-        Min      1Q  Median      3Q     Max 
-    -2.2752 -0.3242 -0.1526  0.4982  2.2081 
-    
+​    Residuals:
+​        Min      1Q  Median      3Q     Max 
+​    -2.2752 -0.3242 -0.1526  0.4982  2.2081 
+​    
     Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
     (Intercept)         2.014878   0.096709  20.834  < 2e-16 ***
@@ -259,10 +259,10 @@ summary(lm(wspacesat ~ poly(wstart,2)))
 ​    Call:
 ​    lm(formula = wspacesat ~ poly(wstart, 2))
 ​    
-    Residuals:
-        Min      1Q  Median      3Q     Max 
-    -2.3541 -0.3253 -0.3036  0.6747  1.8128 
-    
+​    Residuals:
+​        Min      1Q  Median      3Q     Max 
+​    -2.3541 -0.3253 -0.3036  0.6747  1.8128 
+​    
     Coefficients:
                       Estimate Std. Error t value Pr(>|t|)    
     (Intercept)       3.308776   0.008377 394.977  < 2e-16 ***
@@ -290,10 +290,10 @@ summary(lm(wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + factor(c
 ​    lm(formula = wspacesat ~ poly(wstart, 2) + factor(gend) + factor(jobty) + 
 ​        factor(comp_type) + educ)
 ​    
-    Residuals:
-        Min      1Q  Median      3Q     Max 
-    -2.2985 -0.3304 -0.1697  0.5561  2.1100 
-    
+​    Residuals:
+​        Min      1Q  Median      3Q     Max 
+​    -2.2985 -0.3304 -0.1697  0.5561  2.1100 
+​    
     Coefficients:
                        Estimate Std. Error t value Pr(>|t|)    
     (Intercept)         3.19690    0.02613 122.360  < 2e-16 ***
@@ -327,10 +327,10 @@ summary(lm(wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + factor(jobty) +
 ​    lm(formula = wspacesat ~ poly(wstart, 2) + lnwage + factor(gend) + 
 ​        factor(jobty) + factor(comp_type) + educ)
 ​    
-    Residuals:
-        Min      1Q  Median      3Q     Max 
-    -2.2692 -0.3236 -0.1471  0.4981  2.2009 
-    
+​    Residuals:
+​        Min      1Q  Median      3Q     Max 
+​    -2.2692 -0.3236 -0.1471  0.4981  2.2009 
+​    
     Coefficients:
                        Estimate Std. Error t value Pr(>|t|)    
     (Intercept)         2.05703    0.08987  22.888  < 2e-16 ***
@@ -422,10 +422,10 @@ summary(lm(lnwage ~ poly(wstart, 3)))
 ​    Call:
 ​    lm(formula = lnwage ~ poly(wstart, 3))
 ​    
-    Residuals:
-         Min       1Q   Median       3Q      Max 
-    -3.14123 -0.34377 -0.00508  0.40037  2.99061 
-    
+​    Residuals:
+​         Min       1Q   Median       3Q      Max 
+​    -3.14123 -0.34377 -0.00508  0.40037  2.99061 
+​    
     Coefficients:
                      Estimate Std. Error t value Pr(>|t|)    
     (Intercept)       5.29579    0.00881 601.117  < 2e-16 ***
@@ -445,7 +445,11 @@ summary(lm(lnwage ~ poly(wstart, 3)))
 
 ## 👍 결론
 설명변수와 종속변수는 다음과 같은 관계를 갖는다.   
-$$wspacesat\quad =\quad 2.05703\quad +\quad 0.83720wstart\quad -\quad 1.28872{ wstart }^{ 2 }+0.21475lnwage\quad +\quad ..$$  
+
+wspacesat\quad =\quad 2.05703\quad +\quad 0.83720wstart\quad -\quad 1.28872{ wstart }^{ 2 }+0.21475lnwage\quad +\quad ..   
+
+(jekyll 블로그에 수식을 사용할 수 있도록 곧 설정할 예정) 
+
 이 함수에서 미분계수가 0이 되는 지점 이후에는 출근시간이 늦어질수록 일자리 만족도가 하락한다.   
 실제 미분계수가 0이 되는 지점은 약 전체 24시간 중 0.3(오전 12시 20분 경)이므로, 출근시간이 늦어질수록 전반적 일자리 만족도가 하락한다고 결과를 일반화할 수 있겠다.
 
