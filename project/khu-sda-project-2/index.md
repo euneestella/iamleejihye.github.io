@@ -405,27 +405,26 @@ ggplot(nrdt_attach, aes(wstart, lnwage))+ geom_point() +geom_smooth(method = "lm
 
 
 ```R
-summary(lm(lnwage ~ poly(wstart, 3)))
-```
+summary(lm(lnwage ~ poly(wstart, 3))) 
 
-
-​    
-​    Call:
+Call:
 ​    lm(formula = lnwage ~ poly(wstart, 3))
 ​    
 ​    Residuals:
 ​         Min       1Q   Median       3Q      Max 
 ​    -3.14123 -0.34377 -0.00508  0.40037  2.99061 
 ​    
-​    Coefficients:
-​                     Estimate Std. Error t value Pr(>|t|)    
-​    (Intercept)       5.29579    0.00881 601.117  < 2e-16 ***
-​    poly(wstart, 3)1 -7.39646    0.61669 -11.994  < 2e-16 ***
-​    poly(wstart, 3)2  1.91414    0.61669   3.104  0.00192 ** 
-​    poly(wstart, 3)3  7.39814    0.61669  11.996  < 2e-16 ***
-​    ---
-​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-​    
+    Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+    (Intercept)       5.29579    0.00881 601.117  < 2e-16 ***
+    poly(wstart, 3)1 -7.39646    0.61669 -11.994  < 2e-16 ***
+    poly(wstart, 3)2  1.91414    0.61669   3.104  0.00192 ** 
+    poly(wstart, 3)3  7.39814    0.61669  11.996  < 2e-16 ***
+    ---
+    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    
+```
+
     Residual standard error: 0.6167 on 4896 degrees of freedom
     Multiple R-squared:  0.05726,	Adjusted R-squared:  0.05669 
     F-statistic: 99.13 on 3 and 4896 DF,  p-value: < 2.2e-16
