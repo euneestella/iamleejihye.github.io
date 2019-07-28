@@ -195,14 +195,11 @@ summary(lm(wspacesat ~ wstart))
     wstart      -0.001104   0.003503  -0.315    0.753    
     ---
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Residual standard error: 0.5877 on 4898 degrees of freedom
+Multiple R-squared:  2.03e-05,	Adjusted R-squared:  -0.0001839 
+F-statistic: 0.09941 on 1 and 4898 DF,  p-value: 0.7526
     
 ```
-
-    Residual standard error: 0.5877 on 4898 degrees of freedom
-    Multiple R-squared:  2.03e-05,	Adjusted R-squared:  -0.0001839 
-    F-statistic: 0.09941 on 1 and 4898 DF,  p-value: 0.7526
-
-
 
 설명변수의 계수는 0에 수렴하고, p값은 통상적 유의수준보다 크므로 유의미한 선형관계가 있다고 볼 수 없다.
 
@@ -345,9 +342,9 @@ Call:
     educ4               0.24806    0.04210   5.892 4.07e-09 ***
 
 ​    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    
+​    
     ```
-
+    
     Residual standard error: 0.5404 on 4888 degrees of freedom
     Multiple R-squared:  0.1564,	Adjusted R-squared:  0.1545 
     F-statistic: 82.38 on 11 and 4888 DF,  p-value: < 2.2e-16
