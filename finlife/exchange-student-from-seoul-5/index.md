@@ -69,8 +69,8 @@ TYS와 Retrodorm 중에서 나는 TYS에 신청했고(추가합격 제도가 있
 
 1. 가을학기 파견 기준으로 입학 허가서는 보통 4월에 이메일을 통해 온다. 이상하게 입학 허가서가 안 온다 싶으면 너무 쫄지 말고 파견교 담당자에게 메일 보내기! 친절히 도와주신다.
 2. 기숙사 신청 경쟁이 심하다. 특히 TYS! 느긋느긋 신청하지 말고 신청 공지가 뜨면 바로 신청하자. (최악의 경우 남들보다 2배 비싼 월세 내면서 학생들과 떨어져 혼자 살아야 한다.)
-   1. TYS : <https://tys.fi/en>>
-   2. Retrodorm : <http://www.retrodorm.fi/>
+   1. TYS : https://tys.fi/en
+   2. Retrodorm : http://www.retrodorm.fi/
 3. 기숙사 신청에 실패했다면?
    1. 직접 부동산 사이트에서 구하는 것보다, 페이스북 그룹을 통해 집을 구하는 것을 추천한다. (비공개 그룹이고, 관리자 승인 후 가입 가능해서 스팸이 거의 없다.)
       1. [www.facebook.com/groups/TurkuStudents](http://www.facebook.com/groups/TurkuStudents)
