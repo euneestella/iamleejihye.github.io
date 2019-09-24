@@ -8,7 +8,7 @@ text: true
 author: "Eunhee Kim"
 post-header: true
 header-img: "img/header.jpg"
-order: 7
+order: 8
 ---
 ## ✨ 어쩌다 보니 해커가 되어버렸다
 
