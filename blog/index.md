@@ -3,7 +3,7 @@ layout: default
 work: true
 main: true
 title: Blog
-description: 소소한 일상을 흘려보내되, 잊지 말아요.
+description: Data Science 공부 기록
 project-header: true
 header-img: "img/about.jpg"
 ---
