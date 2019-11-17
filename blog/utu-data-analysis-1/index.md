@@ -3,7 +3,7 @@ layout: post
 title: CRISP-DM Model을 활용한 데이터 마이닝
 subtitle: "데이터 마이닝의 6단계"
 type: "data analysis process"
-finlife: true
+blog: true
 text: true
 author: "Eunhee Kim"
 post-header: true
