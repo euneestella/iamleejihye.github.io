@@ -8,7 +8,7 @@ text: true
 author: "Eunhee Kim"
 post-header: true
 header-img: "img/header.jpg"
-tags: [datascience, tag2, tag3]
+tags: [tag1, tag2, tag3]
 order: 2
 ---
 
